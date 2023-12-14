@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Proyecto reconocimiento de imagenes", "Proyecto reconocimiento de imagenes\Proyecto reconocimiento de imagenes.pyproj", "{27512A70-3898-4435-AFFF-FAEA2F8295BC}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Proyecto Redes neuronales", "..\Proyecto Redes neuronales\Proyecto Redes neuronales\Proyecto Redes neuronales.pyproj", "{E1DAA5C2-5CB6-47C1-8FC1-F657E6644215}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27512A70-3898-4435-AFFF-FAEA2F8295BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27512A70-3898-4435-AFFF-FAEA2F8295BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1DAA5C2-5CB6-47C1-8FC1-F657E6644215}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1DAA5C2-5CB6-47C1-8FC1-F657E6644215}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D951EDC-E840-40B3-BBC5-0FE9375FD3C2}
+	EndGlobalSection
+EndGlobal
