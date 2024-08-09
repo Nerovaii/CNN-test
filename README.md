@@ -1,3 +1,3 @@
-# Se recomienda descargar el datasets de gatos vs perros desde la pagina de tensorflow.
+# Se recomienda descargar el datasets desde la pagina de tensorflow, aunque es opcion del usuario el importar imagenes propias.
 
-# It is recommended to download the cats vs dogs dataset from the tensorflow page.
+# It is recommended to download the  dataset from the tensorflow page, but you can import your own images if you want
