@@ -7,11 +7,11 @@ from tensorflow.keras.callbacks import TensorBoard
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from sklearn.model_selection import train_test_split
 
-# Rutas de entrenamiento y validaci髇
-entrenamiento = 'C:/Users/elnik/source/repos/Proyecto reconocimiento de imagenes/Proyecto reconocimiento de imagenes/gatos_vs_perros/Entrenamiento'
-validacion = 'C:/Users/elnik/source/repos/Proyecto reconocimiento de imagenes/Proyecto reconocimiento de imagenes/gatos_vs_perros/Validacion'
+# Rutas de entrenamiento y validaci贸n
+entrenamiento = 'Your_Training_Directory'
+validacion = 'Your_Validation_Directory'
 
-# Listas de im醙enes
+# Listas de im谩genes
 listaEntrenamiento = os.listdir(entrenamiento)
 listaValidacion = os.listdir(validacion)
 
@@ -49,7 +49,7 @@ for con, nameDir in enumerate(listaEntrenamiento):
             print(e)
             os.remove(ruta_imagen)
 
-# Validaci髇
+# Validaci贸n
 for con2, nameDir in enumerate(listaValidacion):
     nombre = os.path.join(validacion, nameDir)
     
@@ -72,7 +72,7 @@ for con2, nameDir in enumerate(listaValidacion):
             print(e)
             os.remove(ruta_imagen)
 
-# Normalizaci髇 de im醙enes
+# Normalizaci贸n de im谩genes
 fotos = np.array(fotos).astype(np.float32) / 255.0
 fotos2 = np.array(fotos2).astype(np.float32) / 255.0
 etiquetas = np.array(etiquetas)
@@ -85,10 +85,10 @@ etiquetas2 = etiquetas2[:min_length]
 fotos = fotos[:min_length]
 fotos2 = fotos2[:min_length]
 
-# Dividir datos de validaci髇 para usar en model.fit
+# Dividir datos de validaci贸n para usar en model.fit
 fotos, fotos_val, etiquetas, etiquetas_val = train_test_split(fotos, etiquetas, test_size=0.2, random_state=42)
 
-# Generador de im醙enes tf
+# Generador de im谩genes tf
 imgTrainGen = ImageDataGenerator(
     rotation_range=50,
     width_shift_range=0.2,
@@ -119,7 +119,7 @@ modelo = tf.keras.models.Sequential([
 print("Longitud de datos de entrenamiento:", len(fotos), len(etiquetas))
 print("Longitud de datos de validacion:", len(fotos_val), len(etiquetas_val))
 
-# Compilaci髇 del modelo
+# Compilaci贸n del modelo
 modelo.compile(optimizer='adam',
                loss='binary_crossentropy',
                metrics=['accuracy'])
