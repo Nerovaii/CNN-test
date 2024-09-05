@@ -7,7 +7,7 @@ from keras_preprocessing.image import img_to_array
 
 # Ruta de Modelo
 
-modelo = 'C:/Users/elnik/source/repos/Proyecto reconocimiento de imagenes/Proyecto reconocimiento de imagenes/ModeloCNN.h5'
+modelo = 'Your_Model_Directory'
 
 # Lectura de redes neuronales
 
